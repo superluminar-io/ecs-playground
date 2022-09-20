@@ -20,9 +20,6 @@ export class EcsPlaygroundStack extends cdk.Stack {
       taskImageOptions: {
         image: ecs.ContainerImage.fromEcrRepository(repository, version.stringValue),
       },
-      circuitBreaker: {
-        rollback: true
-      }
     });
   }
 }
