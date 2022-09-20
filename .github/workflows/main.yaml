@@ -1,0 +1,10 @@
+name: main
+
+on: push
+
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 70
+        timeout-minutes: 1
